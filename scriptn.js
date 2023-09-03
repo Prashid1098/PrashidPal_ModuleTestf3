@@ -6,7 +6,7 @@ const prevD=document.querySelector("#search-history");
 const url_n="https://api.nasa.gov/planetary/apod?api_key=";
 
 
-async function checkDate(dates)
+async function getCurrentImageOfTheDay(dates)
 {
     const response=await fetch(url_n+API_KEY+`&date=${dates}`);
     var info= await response.json();
@@ -54,7 +54,7 @@ function addSearchToHistory(date)
     anchor.addEventListener("click",()=>{
         if(date==anchor.textContent)
         {
-            checkDate(date);
+            getCurrentImageOfTheDay(date);
             prevD.removeChild(listItem);
         }
     });
@@ -65,7 +65,7 @@ searchSub.addEventListener("click",()=>{
     //console.log(100);
     const searchBox=forms.querySelector("#search-input");
     const dates=searchBox.value;
-    checkDate(dates);
+    getCurrentImageOfTheDay(dates);
 
     // if (prevD.lastChild) {
     //     prevD.removeChild(prevD.lastChild);
