@@ -1,0 +1,66 @@
+*
+{
+    margin-left: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+input[type="date"]
+{
+    height: 4vh;
+    width: 8vw;
+}
+input[type="submit"]
+{
+    font-weight: bold;
+    height: 4vh;
+    padding: 0px 5.5px;
+}
+#current-image-container
+{
+    background-color: #000000;
+    color: white;
+    position: relative;
+    margin-right: 39vw;
+    /* padding-left: 6.5vw; */
+}
+#nasa-photo
+{
+    width: 40vw;
+    height: 48vh;
+    margin-left: 6.5vw;
+}
+.header-n
+{
+    padding: 8px;
+    margin-left: 35%;
+    font-size: 23px;
+    font-weight: 800;
+}
+#title
+{
+    margin-left: 15vw;
+    font-size: 30px;
+    font-weight: 900;
+}
+.contain-n
+{
+    width: 90%;
+    padding-bottom: 7px;
+}
+#descrip
+{
+    font-size: 18px;
+    word-spacing: 3px;
+    font-weight: bold;
+}
+li
+{
+    padding: 5px;
+}
